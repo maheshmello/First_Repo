@@ -1,0 +1,19 @@
+name: Email Step Test
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: 23ds3000122@ds.study.iitm.ac.in
+        run: echo "This step includes the email address."
+
+      - name: Print success message
+        run: echo "Workflow ran successfully."
